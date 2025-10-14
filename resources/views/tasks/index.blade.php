@@ -33,6 +33,14 @@
                                 placeholder="洗濯物をする..." type="text" name="task_name" />
                         </label>
 
+                        <select neme="gun" id="gun-select">
+                            <option value="">--好きなものを1つ選択して下さい--</option>
+                            <option value="assault-rifke">AK47</option>
+                            <option value="sniper-rifle">M-24</option>
+                            <option value="hand-gun">グロック17</option>
+                        </select>
+
+
                         <button type="submit"
                             class="mt-8 p-4 bg-slate-800 text-white w-full max-w-xs hover:bg-slate-900 transition-colors">
                             追加する
