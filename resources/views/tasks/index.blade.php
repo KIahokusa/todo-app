@@ -34,7 +34,6 @@
                         </label>
 
                         <select neme="gun" id="gun-select">
-                            <option value="">--好きなものを1つ選択して下さい--</option>
                             <option value="assault-rifke">AK47</option>
                             <option value="sniper-rifle">M-24</option>
                             <option value="hand-gun">グロック17</option>

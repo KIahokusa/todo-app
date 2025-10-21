@@ -34,6 +34,7 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
+
         $rules = [
             'task_name' => 'required|max:100',
         ];
@@ -74,6 +75,7 @@ class TaskController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        dd($request->status);
 
         //「編集する」ボタンをおしたとき
         if ($request->status === null) {
