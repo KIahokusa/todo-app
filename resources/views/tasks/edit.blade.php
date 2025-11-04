@@ -39,6 +39,12 @@
                             @enderror
                         </label>
 
+                        <select name="gun" id="gun-select">
+                            <option value="AK47">AK47</option>
+                            <option value="M-24">M-24</option>
+                            <option value="グロック17">グロック17</option>
+                        </select>
+
                         <div class="mt-8 w-full flex items-center justify-center gap-10">
                             <a href="/tasks" class="block shrink-0 underline underline-offset-2">
                                 戻る

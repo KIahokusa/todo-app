@@ -34,6 +34,7 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->input('gun'));
 
         $rules = [
             'task_name' => 'required|max:100',
@@ -47,6 +48,7 @@ class TaskController extends Controller
         $task = new Task;
         //モデル->カラム名 = 値 で、データを割り当てる
         $task->name = $request->input('task_name');
+        $task->category = $request->input('gun');
         //モデルをインスタンス化
         $task->save();
         //モデルをインスタンス化
@@ -75,8 +77,6 @@ class TaskController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        dd($request->status);
-
         //「編集する」ボタンをおしたとき
         if ($request->status === null) {
             $rules = [
@@ -93,6 +93,7 @@ class TaskController extends Controller
 
             //モデル->カラム名 = 値 で、データを割り当てる
             $task->name = $request->input('task_name');
+            $task->category = $request->input('gun');
 
             //データベースに保存
             $task->save();

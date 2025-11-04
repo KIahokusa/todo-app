@@ -33,10 +33,10 @@
                                 placeholder="洗濯物をする..." type="text" name="task_name" />
                         </label>
 
-                        <select neme="gun" id="gun-select">
-                            <option value="assault-rifke">AK47</option>
-                            <option value="sniper-rifle">M-24</option>
-                            <option value="hand-gun">グロック17</option>
+                        <select name="gun" id="gun-select">
+                            <option value="AK47">AK47</option>
+                            <option value="M-24">M-24</option>
+                            <option value="グロック17">グロック17</option>
                         </select>
 
 
@@ -58,6 +58,8 @@
                                         <th scope="col"
                                             class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900">
                                             タスク</th>
+                                        <th scope="col">
+                                            Category</th>
                                         <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                             <span class="sr-only">Actions</span>
                                         </th>
@@ -69,6 +71,11 @@
                                         <td class="px-3 py-4 text-sm text-gray-500">
                                             <div>
                                                 {{ $item->name }}
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                {{ $item->category }}
                                             </div>
                                         </td>
                                         <td class="p-0 text-right text-sm font-medium">
